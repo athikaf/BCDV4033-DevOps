@@ -4,7 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "eslint simpleCalc.js",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "dependencies": {
+    "jest": "^29.5.0",
+    "jslint": "^0.12.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   },
   "author": "",
   "license": "ISC"
