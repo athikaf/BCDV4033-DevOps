@@ -21,3 +21,12 @@ jobs:
 
       - name: Run Jest tests
         run: npm test
+
+      - name: Build project
+        run: npm run build
+
+      - name: Archive dist directory
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
