@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "style": "eslint simpleCalc.js",
+    "lint": "npx eslint ./src/simpleCalc.js",
+    "style": "eslint ./src/simpleCalc.js",
     "build": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "prepare": "husky install"
   },
   "dependencies": {
     "jslint": "^0.12.1",
